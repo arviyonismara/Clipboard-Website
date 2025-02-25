@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ketika ukuran screen sm 0-576 px bg menjadi mobile */
+@media (max-width: 576px) {
+  body {
+    background-image: url("./images/bg-header-mobile.png");
+  }
+}
