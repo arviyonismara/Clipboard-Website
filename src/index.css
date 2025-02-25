@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.section-container {
+  @apply max-w-6xl mx-auto text-center px-10;
+}
+
+@layer base {
+  h5 {
+    @apply mb-2 text-2xl font-bold text-darkGreyishBlue;
+  }
+}
+
 body {
   background-image: url("./images/bg-header-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.section-content {
+  @apply max-w-3xl mx-auto text-xl leading-9 text-center text-grayishBlue;
 }
 
 /* ketika ukuran screen sm 0-576 px bg menjadi mobile */
